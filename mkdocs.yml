@@ -1,4 +1,4 @@
-site_name: TextFlex documentation
+site_name: Documentation
 theme:
   name: material
   features:
@@ -11,20 +11,30 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+  logo:   assets/TextFlex-logo.png
+  favicon: assets/favicon.png
   language: en
   palette:
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: teal
+      primary: black
       accent: purple 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: teal
-      accent: lime
+      primary: yellow
+      accent: lime*
+
+  markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+  plugins:
+  - glightbox
 
 
 
