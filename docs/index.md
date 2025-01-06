@@ -163,4 +163,11 @@ click the Reset button to apply your changes and instantly update the animation,
 
 ## FAQ
 
-test Faq
+### Why is the "Based On" function not included in the effect?
+
+The "Based On" option cannot be controlled by expressions, which is why it is available only in the script panel.
+
+### Why can't I save the Direction property and the text properties: In/Out, Markers, Overshoot, and Ease?
+
+Currently, you can only save the "Based On" property and key text animation properties such as position, scale, rotation, and more. 
+For other properties like Direction, In/Out, Markers, Overshoot, and Ease, you will need to manually chose them before clicking the "Load Preset" button.
