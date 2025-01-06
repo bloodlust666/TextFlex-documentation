@@ -36,6 +36,16 @@ theme:
   plugins:
   - glightbox
 
+extra:
+  social:
+    - icon: simple/dribbble
+      link: https://dribbble.com/BlooDlust
+    - icon: simple/behance
+      link: https://www.behance.net/sharklotfi
+    - icon: simple/linkedin
+      link: https://www.linkedin.com/in/lotfi-jilal-0118bb165/
+
+copyright: Copyright &copy; 2024 Lotfi Jilal
 
 
 
