@@ -20,6 +20,7 @@ With TextFlex, you can:
 - Customize all text properties, including position, scale, and more.
 - Add markers to synchronize animations with voiceovers.
 - Seamlessly create In and Out animations for dynamic effects and transition.
+- You can apply and edit text animations across multiple layers effortlessly.
 
 TextFlex automatically adds a text animation group with selected properties and a sliders control effect:
 
@@ -71,16 +72,8 @@ This dropdown menu controls the flow of the animation. Select from:
 - Center Outward: Animates starting from the center outward.
 - Random: Animates elements in a random sequence.
 
-### Animate Button:
-After selecting your preferred animation style and text properties, click the Animate button to generate control sliders and apply the text animation. 
-This makes customization straightforward and quick.
 
-### Reset Button:
-When you've generated your animation using the Animate button, you can manually refine the values directly in the TexFlex UI panel.
-Once adjustments are made, click the Reset button to instantly apply your changes and update the animation. 
-This feature ensures precision and supports an efficient workflow.
-
-### Text Propeties
+### Text Properties
 
 ![textflex](assets/Interface - TextProp.png/)
 
@@ -129,6 +122,19 @@ This makes it easy to reuse your favorite animation configurations.
 #### Refresh Button:
 If you open After Effects and don’t see your saved presets or if you’ve added new presets externally, 
 use this button to refresh the dropdown menu. It ensures that all available presets are loaded and ready for use.
+
+### Animation Buttons
+
+![textflex](assets/Interface - Buttons.png/)
+
+#### Animate Button:
+After selecting your preferred animation style and text properties, click the Animate button to generate control sliders and apply the text animation. 
+This makes customization straightforward and quick.
+
+#### Reset Button:
+When you've generated your animation using the Animate button, you can manually refine the values directly in the TexFlex UI panel.
+Once adjustments are made, click the Reset button to instantly apply your changes and update the animation. 
+This feature ensures precision and supports an efficient workflow.
 
 ## Controls
 
