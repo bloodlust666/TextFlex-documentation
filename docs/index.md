@@ -7,6 +7,7 @@
 ### What is TextFlex ?
 
 TextFlex is a script created by Lotfi Jilal. 
+
 This powerful text animation tool for After Effects is designed to break down text animations 
 by Characters, words, or lines, offering precise control and flexibility without the need to keyframe.
 
@@ -29,6 +30,8 @@ TextFlex automatically adds a text animation group with selected properties and 
 ## Installation
 
 ### Settings
+
+Compatibility : After effects CC 2015 +
 
 Go through Edit -> Preferences -> General. A window will open with a bunch of checkboxes, 
 where you can enable “Allow Scripts to Write Files and Access Network”.
@@ -111,7 +114,7 @@ Use this button to save your current animation settings as a preset. To save a p
 ensure you have a text layer with TexFlex animations or animators applied. 
 The parameters and values of the selected text layer will be saved for future use.
 
-#### Slect Preset Dropdown Menu:
+#### Select Preset Dropdown Menu:
 This menu allows you to view and select from your saved presets. 
 Simply choose the desired preset from the dropdown list to prepare it for loading or editing.
 
@@ -161,8 +164,8 @@ Increase the value for a staggered effect, or decrease it for a more synchronize
 
 TexFlex offers versatile control over your text animation properties, including Position, Rotation, Scale, and more. You can manage these properties in two ways:
 
-- 1 Slider Controls: Adjust the values using intuitive sliders to fine-tune the animation effortlessly.
-- 2 UI Panel Input: Manually enter precise values directly in the Textflex UI panel for exact control, once you've made your adjustments, 
+- 1 -Slider Controls: Adjust the values using intuitive sliders to fine-tune the animation effortlessly.
+- 2 -UI Panel Input: Manually enter precise values directly in the Textflex UI panel for exact control, once you've made your adjustments, 
 click the Reset button to apply your changes and instantly update the animation, ensuring a seamless and efficient workflow.
 
 
