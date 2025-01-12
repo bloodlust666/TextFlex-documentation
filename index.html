@@ -1,0 +1,876 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="bleu">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#textflex-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="assets/TextFlex-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TextFlex Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="bleu"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="yellow" data-md-color-accent="yellow"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  TextFlex Documentation
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="assets/TextFlex-logo.png" alt="logo">
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TextFlex Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TextFlex Documentation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-textflex" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is TextFlex ?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-you-can-do-with-textflex" class="md-nav__link">
+    <span class="md-ellipsis">
+      What you can do with TextFlex ?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#based-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Based on
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Properties
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in" class="md-nav__link">
+    <span class="md-ellipsis">
+      In :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inout" class="md-nav__link">
+    <span class="md-ellipsis">
+      In/Out :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markers :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overshoot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overshoot :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ease :
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preset-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preset Section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preset Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#save-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save Button:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-preset-dropdown-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select Preset Dropdown Menu:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-preset-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load Preset Button:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refresh-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refresh Button:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Buttons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Animation Buttons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#animate-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animate Button:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reset Button:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controls
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decay
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delay
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-properties_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      FAQ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FAQ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-the-based-on-function-not-included-in-the-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is the "Based On" function not included in the effect?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-cant-i-save-the-direction-property-and-the-text-properties-inout-markers-overshoot-and-ease" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why can't I save the Direction property and the text properties: In/Out, Markers, Overshoot, and Ease?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="textflex-documentation">TextFlex Documentation</h1>
+<h2 id="introduction">Introduction</h2>
+<p><img alt="textflex header" src="assets/TextFlexlogo-header-light.png" /></p>
+<h3 id="what-is-textflex">What is TextFlex ?</h3>
+<p>TextFlex is a script created by Lotfi Jilal. </p>
+<p>This powerful text animation tool for After Effects is designed to break down text animations 
+by Characters, words, or lines, offering precise control and flexibility without the need to keyframe.</p>
+<h3 id="what-you-can-do-with-textflex">What you can do with TextFlex ?</h3>
+<p>With TextFlex, you can:</p>
+<ul>
+<li>Choose between Overshoot and Ease animation styles.</li>
+<li>Control animation properties like duration and delay.</li>
+<li>Control Direction properties like Right to left or Center Outwords,and more.</li>
+<li>Customize all text properties, including position, scale, and more.</li>
+<li>Add markers to synchronize animations with voiceovers.</li>
+<li>Seamlessly create In and Out animations for dynamic effects and transition.</li>
+<li>You can apply and edit text animations across multiple layers effortlessly.</li>
+</ul>
+<p>TextFlex automatically adds a text animation group with selected properties and a sliders control effect:</p>
+<p><img alt="textflex" src="assets/Interface_TextAnimator.png" /></p>
+<h2 id="installation">Installation</h2>
+<h3 id="settings">Settings</h3>
+<p>Compatibility : After effects CC 2015 +</p>
+<p>Go through Edit -&gt; Preferences -&gt; General. A window will open with a bunch of checkboxes, 
+where you can enable “Allow Scripts to Write Files and Access Network”.</p>
+<p>Copy "texflex.jsx" to ScriptUI Panels folder:</p>
+<p>Windows:</p>
+<pre><code>C:/Program Files/Adobe/Adobe After Effects CC/Support Files/Scripts/ScriptUI Panels/ 
+</code></pre>
+<p>Mac OS:</p>
+<pre><code>/Applications/Adobe After Effects CC/Scripts/ScriptUI Panels  
+</code></pre>
+<p>Then restart After Effects.</p>
+<h2 id="interface">Interface</h2>
+<p><img alt="textflex" src="assets/Interface.png" /></p>
+<p>TexFlex features a user-friendly, dockable interface designed for seamless integration into your After Effects workspace.
+You can position the panel vertically or horizontally, aligning it with your workflow preferences.</p>
+<p>The panel is organized into intuitive sections, making it easy to access animation controls, sliders, 
+and dropdown menus. Whether you’re working on simple animations or complex sequences, 
+TexFlex’s interface ensures all tools are at your fingertips, saving time and enhancing productivity.</p>
+<h3 id="based-on">Based on</h3>
+<p>This dropdown menu determines the unit of animation. Choose whether the text animates 
+based on Characters, Words, or Lines, allowing for precise control over how the animation is applied to the text.</p>
+<h3 id="direction">Direction</h3>
+<p>This dropdown menu controls the flow of the animation. Select from:</p>
+<ul>
+<li>Left to Right: Animates sequentially from left to right.</li>
+<li>Right to Left: Animates sequentially from right to left.</li>
+<li>Center Inward: Animates starting from the edges toward the center.</li>
+<li>Center Outward: Animates starting from the center outward.</li>
+<li>Random: Animates elements in a random sequence.</li>
+</ul>
+<h3 id="text-properties">Text Properties</h3>
+<p><img alt="textflex" src="assets/Interface%20-%20TextProp.png" /></p>
+<p>The Text Properties Section in TexFlex provides robust controls to customize your text animation. 
+Below is an overview of the available features:</p>
+<h4 id="in">In :</h4>
+<p>This option, selected by default, ensures the animation starts at the beginning of the text layer. 
+It's a straightforward way to apply animations without additional configuration.</p>
+<h4 id="inout">In/Out :</h4>
+<p>Selecting this option enables both "In" and "Out" animations. 
+The "Out" animation is automatically applied at the end of the text layer, 
+allowing seamless entry and exit animations for your text.</p>
+<h4 id="markers">Markers :</h4>
+<p>By checking this box, you can add markers to your text layer. 
+These markers allow you to synchronize animations with voiceovers or customize timing according to your specific preferences.</p>
+<h4 id="overshoot">Overshoot :</h4>
+<p>This option provides dynamic, bounce-like animation effects, giving your text a lively and energetic feel.</p>
+<h4 id="ease">Ease :</h4>
+<p>This option applies a simple, smooth ease-in and ease-out animation style, perfect for subtle and polished effects.</p>
+<h3 id="preset-section">Preset Section</h3>
+<p><img alt="textflex" src="assets/Interface%20-Preset.png" /></p>
+<p>The Preset Section of TexFlex provides intuitive tools to save, load, and manage your custom animation presets. 
+Here’s a breakdown of its functionality:</p>
+<h4 id="save-button">Save Button:</h4>
+<p>Use this button to save your current animation settings as a preset. To save a preset, 
+ensure you have a text layer with TexFlex animations or animators applied. 
+The parameters and values of the selected text layer will be saved for future use.</p>
+<h4 id="select-preset-dropdown-menu">Select Preset Dropdown Menu:</h4>
+<p>This menu allows you to view and select from your saved presets. 
+Simply choose the desired preset from the dropdown list to prepare it for loading or editing.</p>
+<h4 id="load-preset-button">Load Preset Button:</h4>
+<p>Once a preset is selected from the dropdown menu, pressing this button applies the preset's settings to the currently selected text layer. 
+This makes it easy to reuse your favorite animation configurations.</p>
+<h4 id="refresh-button">Refresh Button:</h4>
+<p>If you open After Effects and don’t see your saved presets or if you’ve added new presets externally, 
+use this button to refresh the dropdown menu. It ensures that all available presets are loaded and ready for use.</p>
+<h3 id="animation-buttons">Animation Buttons</h3>
+<p><img alt="textflex" src="assets/Interface%20-%20Buttons.png" /></p>
+<h4 id="animate-button">Animate Button:</h4>
+<p>After selecting your preferred animation style and text properties, click the Animate button to generate control sliders and apply the text animation. 
+This makes customization straightforward and quick.</p>
+<h4 id="reset-button">Reset Button:</h4>
+<p>When you've generated your animation using the Animate button, you can manually refine the values directly in the TexFlex UI panel.
+Once adjustments are made, click the Reset button to instantly apply your changes and update the animation. 
+This feature ensures precision and supports an efficient workflow.</p>
+<h2 id="controls">Controls</h2>
+<p><img alt="textflex" src="assets/Interface_Controls.png" /></p>
+<h3 id="frequency">Frequency</h3>
+<p>This parameter defines the oscillation speed of the animation when using the "Overshoot" style. 
+Higher values create rapid bounces, while lower values result in smoother, slower movements.</p>
+<h3 id="decay">Decay</h3>
+<p>This parameter controls how quickly the overshoot effect diminishes over time. 
+Use a higher decay to reduce the bouncing effect faster, or a lower decay for a prolonged and dramatic overshoot.</p>
+<h3 id="duration">Duration</h3>
+<p>This parameter controls the length of time the text animation takes to complete. 
+Adjust it to make your animation faster or slower based on your project's needs.</p>
+<h3 id="delay">Delay</h3>
+<p>This parameter sets the delay between the animations of individual characters, words, or lines. 
+Increase the value for a staggered effect, or decrease it for a more synchronized look.</p>
+<h3 id="text-properties_1">Text Properties</h3>
+<p>TexFlex offers versatile control over your text animation properties, including Position, Rotation, Scale, and more. You can manage these properties in two ways:</p>
+<ul>
+<li>1 -Slider Controls: Adjust the values using intuitive sliders to fine-tune the animation effortlessly.</li>
+<li>2 -UI Panel Input: Manually enter precise values directly in the Textflex UI panel for exact control, once you've made your adjustments, 
+click the Reset button to apply your changes and instantly update the animation, ensuring a seamless and efficient workflow.</li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<h3 id="why-is-the-based-on-function-not-included-in-the-effect">Why is the "Based On" function not included in the effect?</h3>
+<p>The "Based On" option cannot be controlled by expressions, which is why it is available only in the script panel.</p>
+<h3 id="why-cant-i-save-the-direction-property-and-the-text-properties-inout-markers-overshoot-and-ease">Why can't I save the Direction property and the text properties: In/Out, Markers, Overshoot, and Ease?</h3>
+<p>Currently, you can only save the "Based On" property and key text animation properties such as position, scale, rotation, and more. 
+For other properties like Direction, In/Out, Markers, Overshoot, and Ease, you will need to manually chose them before clicking the "Load Preset" button.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Lotfi Jilal
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://dribbble.com/BlooDlust" target="_blank" rel="noopener" title="dribbble.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12m10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308a10.28 10.28 0 0 0 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4a10.16 10.16 0 0 0 6.29 2.166c1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765q.202-.067.405-.12-.392-.879-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248a66 66 0 0 0-3.8-5.928 10.28 10.28 0 0 0-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702A10.2 10.2 0 0 0 12 1.764c-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.behance.net/sharklotfi" target="_blank" rel="noopener" title="www.behance.net" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.969 16.927a2.56 2.56 0 0 0 1.901.677 2.5 2.5 0 0 0 1.531-.475c.362-.235.636-.584.779-.99h2.585a5.1 5.1 0 0 1-1.9 2.896 5.3 5.3 0 0 1-3.091.88 5.8 5.8 0 0 1-2.284-.433 4.9 4.9 0 0 1-1.723-1.211 5.7 5.7 0 0 1-1.08-1.874 7 7 0 0 1-.383-2.393c-.005-.8.129-1.595.396-2.349a5.31 5.31 0 0 1 5.088-3.604 4.9 4.9 0 0 1 2.376.563c.661.362 1.231.87 1.668 1.485a6.2 6.2 0 0 1 .943 2.133c.194.821.263 1.666.205 2.508h-7.699c-.063.79.184 1.574.688 2.187M6.947 4.084a8 8 0 0 1 1.928.198 4.3 4.3 0 0 1 1.49.638c.418.303.748.711.958 1.182.241.579.357 1.203.341 1.83a3.5 3.5 0 0 1-.506 1.961 3.7 3.7 0 0 1-1.503 1.287 3.6 3.6 0 0 1 2.027 1.437c.464.747.697 1.615.67 2.494a4.6 4.6 0 0 1-.423 2.032 3.95 3.95 0 0 1-1.163 1.413 5.1 5.1 0 0 1-1.683.807 7.1 7.1 0 0 1-1.928.259H0V4.084zm-.235 12.9q.464.006.916-.099a2.2 2.2 0 0 0 .766-.332c.228-.158.411-.371.534-.619.142-.317.208-.663.191-1.009a2.08 2.08 0 0 0-.642-1.715 2.62 2.62 0 0 0-1.696-.505h-3.54v4.279zm13.635-5.967a2.13 2.13 0 0 0-1.654-.619 2.34 2.34 0 0 0-1.163.259 2.5 2.5 0 0 0-.738.62 2.4 2.4 0 0 0-.396.792q-.111.36-.137.734h4.769a3.24 3.24 0 0 0-.679-1.785zm-13.813-.648a2.25 2.25 0 0 0 1.423-.433c.399-.355.607-.88.56-1.413a1.9 1.9 0 0 0-.178-.891 1.3 1.3 0 0 0-.495-.533 1.85 1.85 0 0 0-.711-.274 4 4 0 0 0-.835-.073H3.241v3.631h3.293zM21.62 5.122h-5.976v1.527h5.976z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/lotfi-jilal-0118bb165/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
