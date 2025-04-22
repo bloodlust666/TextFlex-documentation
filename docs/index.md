@@ -1,7 +1,7 @@
 # TextFlex Documentation
 
 ## Introduction
-![textflex header](assets/TextFlexlogo-header-light.png/)
+![textflex header](assets/textflex_splash_img_V2_1920x1920.png/)
 
 
 ### What is TextFlex ?
